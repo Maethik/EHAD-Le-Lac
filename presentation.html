@@ -3,41 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/presentation.css" >
-    <title>Présentation - EHPAD Le Lac</title>
+    <link rel="stylesheet" href="presentation.css" >
+    <title>Document</title>
 </head>
 <body>
     <div class="block">
         <div class="imageblock">
             <img src="img/Buanes-01.jpg" alt="logo nosgestesclimat">
-            <button>Buanes</button>
+            <button id="Buanesbutton">Buanes</button>
             <div class="footerphoto"></div>
         </div>
         <div class="imageblock">
             <img src="img/Bremaud.jpg" alt="logo Emmaüs">
-            <button>Bremaud</button>
+            <button id="Bremaudbutton">Bremaud</button>
             <div class="footerphoto"></div>
         </div>
         <div class="imageblock">
             <img src="img/Rab-haut-01.jpg" alt="logo citeo">
-            <button>Rabier-haut</button>
+            <button id="Rabier-hautbutton">Rabier-haut</button>
             <div class="footerphoto"></div>
         </div>
         <div class="imageblock">
             <img src="img/Rabier-bas.jpg" alt="logo bon pote">
-            <button>Rabier-Bas</button>
+            <button id="Rabier-basbutton">Rabier-Bas</button>
             <div class="footerphoto"></div>
         </div>
         <div class="imageblock">
             <img src="img/Papin.jpg" alt="logo nosgestesclimat">
-            <button>Papin</button>
+            <button id="Papinbutton">Papin</button>
             <div class="footerphoto"></div>
         </div>
         <div class="imageblock">
             <img src="img/Fil-du-Temps.jpg" alt="logo Emmaüs">
-            <button>Au fil du temps</button>
+            <button id="fildutempbutton">Au fil du temps</button>
             <div class="footerphoto"></div>
         </div>
+
+        <div class="popup" id="Buanespop">
+            <div class="popup-content">
+                <span class="close" id="Buanesclose">&times;</span>
+                <h1>Buanes</h1>
+                <p> Ce service est composé de 22 chambres et accueille 
+                    29 résidents.Vous trouverez à Buanes, un salon pour
+                    la vie quotidienne ainsi qu’une salle à manger lumineuse.
+                    A l’apparition des beaux jours, le service bénéficie d’un
+                    accès direct sur un parc fleuri et arboré où il est agréable
+                    de se reposer et d’échanger avec d’autres résidents. 
+                    A proximité du service, se trouve le salon de coiffure 
+                    ainsi que la petite boutique.La place du village, également 
+                    à proximité, est un lieu de rencontre privilégié pour discuter.</p>
+                <img class="imgpopup" src="img/Buanes-01.jpg" alt="logo Emmaüs">
+            </div>
+        </div>
+        <div class="popup" id="Rabier-hautpop">
+            <div class="popup-content">
+                <span class="close" id="Rabier-hautclose">&times;</span>
+                <h1>Rabier-haut</h1>
+                <p> Ce service se situe au 1er étage de l’établissement.
+                    Il dispose de 26 chambres et permet d’accueillir 30 résidents.
+                    Vous trouverez à Rabier Haut, une salle à manger lumineuse ainsi que la Chapelle de l’Etablissement.
+                    L’équipe de soins accueille la personne âgée en proposant un accompagnement personnalisé.
+                    L’organisation de travail est orientée vers un maintien de l’autonomie et l’intégration du résident.</p>
+                <img class="imgpopup" src="img/Rab-haut-01.jpg" alt="logo Emmaüs">
+            </div>
+        </div>
+        <div class="popup" id="Bremaudpop">
+            <div class="popup-content">
+                <span class="close" id="Bremaudclose">&times;</span>
+                <h1>Bremaud</h1>
+                <p> Le service Brémaud-Pasquet se situe sur 2 étages.
+                    Au 1er étage, le secteur Brémaud où se trouvent 8 chambres et une salle à manger lumineuse et conviviale.
+                    Au 2ème étage, le secteur Pasquet où se trouvent 14 chambres, un salon esthétique, un espace repas avec la bibliothèque et un salon avec la télévision.</p>
+                <img class="imgpopup" src="img/Bremaud.jpg" alt="logo Emmaüs">
+            </div>
+        </div>
+        <div class="popup" id="Rabier-baspop">
+            <div class="popup-content">
+                <span class="close" id="Rabier-basclose">&times;</span>
+                <h1>Rabier-Bas</h1>
+                <p> Le service est situé au Rez de Chaussée entre l’unité Au fil du Temps et la Salle Rabier ce qui 
+                    facilite l’accès pour les animations. Les visiteurs peuvent se rendre directement dans le service par la porte située au niveau de la salle à manger qui donne sur l’extérieur.</p>
+                <img class="imgpopup" src="img/Rabier-bas.jpg" alt="logo Emmaüs">
+            </div>
+        </div>
+        <div class="popup" id="Papinpop">
+            <div class="popup-content">
+                <span class="close" id="Papinclose">&times;</span>
+                <h1>Papin</h1>
+                <p> Le service Papin est situé au 1er étage et accueille 28 résidents dans un cadre sécurisé et convivial.
+                    La salle à manger offre une vue panoramique sur la vallée d’Argenton et est également décorée au fil des saisons.</p>
+                <img class="imgpopup" src="img/Papin.jpg" alt="logo Emmaüs">
+            </div>
+        </div>
+        <div class="popup" id="fildutemppop">
+            <div class="popup-content">
+                <span class="close" id="fildutempclose">&times;</span>
+                <h1>Au fil du temps</h1>
+                <p> Ce service accueille 12 résidents touchés par la maladie d’Alzheimer ou syndromes apparentés.
+                    C’est une unité fermée qui respecte le rythme de vie du résident.
+                    Chaque chambre individuelle est composée d’une salle d’eau séparée avec douche, lavabo et wc.
+                    La salle à manger commune est équipée d’une cuisine thérapeutique qui permet l’élaboration de recettes pour certains repas (potage, repas à thème, …).
+                    Un planning d’animation est établi à la semaine pour chaque jour sauf le week-end qui reste plus ouvert aux visites des familles.</p>
+                <img class="imgpopup" src="img/Fil-du-Temps.jpg" alt="logo Emmaüs">
+            </div>
+        </div>
+        <script src="script.js"></script>
     </div>
     
 </body>
