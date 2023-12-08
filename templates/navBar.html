@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navBar.css">
+    <title>navBar</title>
+</head>
+<body>
+    <header>
+        <div class="background"></div>
+        <img id="logo" src="/img/logo-ehpad-le-lac.svg" alt="logo ehpad le lac">
+        <div class="content">
+            <div class="links-container">
+                <div class="accueil">
+                    <div class="links accueil-link"><a style="color: white;" href="#">Accueil</a></div>
+                </div>
+                <div class="presentation">
+                    <div class="links presentation-link"><p href="#">Présentation</p></div>
+                </div>
+                <div class="services">
+                    <div class="links services-link"><a href="#">Services</a></div>
+                </div>
+                <div class="administration">
+                    <div class="links administration-link"><a href="#">Administration</a></div>
+                </div>
+                <div>
+                    <div class="links contacts-link"><a href="#">Contacts</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="sous-menu-container">
+            <div class="sous-menu-presentation">
+                <a href="#">L'EHPAD</a>
+                <a href="#">Localisation</a>
+                <a href="#">Chambres</a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const presentationLink = document.querySelector(".presentation-link")
+        const sousMenuPresentation = document.querySelector("sous-menu-presentation")
+
+        presentationLink.addEventListener("click", toggleNav)
+
+        function toggleNav() {
+            sousMenuPresentation.classList.toggle("active")
+        }
+    </script>
+</body>
+</html>
