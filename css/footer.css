@@ -1,3 +1,33 @@
-footer{
-    background-color: grey;
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #89AF35;
+    width: 100vw;
+    height: 100px;
+}
+
+img {
+    max-width: 50%;
+    margin-left: 10px;
+    height: 70%;
+    bottom: 10px;
+}
+a {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    color: #FFF6E1;
+    margin:10px;
+    margin-left: 30px;
+    width: 100px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p{
+    color: #FFF6E1;
+    margin-right: 10px; 
 }
