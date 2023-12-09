@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/navBar.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header id="header" class="small">
+        <div id="background" class="small"></div>
+        <img id="logo" class="small" src="/img/logo-ehpad-le-lac.svg" alt="logo ehpad le lac">
+        <div class="content">
+            <div class="links-container">
+                <div class="accueil">
+                    <div class="links"><a class="accueil-link" href="accueil.html">Accueil</a></div>
+                </div>
+                <div class="presentation">
+                    <div class="links"><a id="presentation-link" style="cursor: pointer;">Présentation</a></div>
+                </div>
+                <div class="services">
+                    <div class="links"><a id="services-link" href="#">Services</a></div>
+                </div>
+                <div class="administration">
+                    <div class="links"><a id="administration-link" href="#">Administration</a></div>
+                </div>
+                <div>
+                    <div class="links"><a id="contacts-link" style="color: white;" href="contact.html">Contacts</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="sous-menu-container">
+            <div id="sous-menu-presentation">
+                <a style="margin-top: 10px;" href="presentation.html">L'EHPAD</a>
+                <a href="presentation.html#localisation">Localisation</a>
+                <a href="presentation.html#histoire">Histoire</a>
+                <a style="margin-bottom: 10px;" href="presentation.html#chambres">Chambres</a>
+            </div>
+        </div>
+    </header>
+
+    <form>
+        <label>E-mail</label>
+        <input type="email">
+        <label>Message</label>
+        <textarea name="mail content" id="text" cols="30" rows="20"></textarea>
+        <button>Envoyer</button>
+    </form>
+
+    <script src="js/navBar.js"></script>
+</body>
+</html>

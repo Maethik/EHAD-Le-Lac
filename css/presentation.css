@@ -1,11 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
 body{
-    background-color:#FFF6E1 ;
+    background-color:#FFF6E1;
+    margin: 0;
 }
 .block{
+    margin: 0;
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    justify-content: center;
     align-items: center;
 }
 .imageblock {
@@ -16,7 +23,7 @@ body{
     margin-bottom: 40px;
     }
 
-img {
+.image-block {
     display: flex;
     width: 100%;
     height: 100%;
@@ -55,19 +62,30 @@ button {
 
 .popup-content {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
     background-color: #fefefe;
     margin:auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%;
+    width: 70%;
+    height: 70%;
+    border-radius: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.close-div {
+    width: 100%;
+    height: 20%;
 }
 
 .close {
-    color: #aaa;
+    color: #666666;
     float: right;
-    font-size: 28px;
+    font-size: 4rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -77,11 +95,138 @@ button {
     color: black;
 }
 
-h1{
-    color:#89AF35;
-    text-align: start;
-    width: 300px;
+.popup-under-content {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
+
+.popup-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 45%;
+    height: 100%;
+}
+
+.popup-h1 {
+    width: 100%;
+    text-align: left;
+    margin: 0;
+    color:#89AF35;
+    font-size: 4rem;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.popup-p {
+    color:black;
+    font-size: 1rem;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+    width: 100%;
+}
+
 .imgpopup{
-    width: 300px;
+    width: 50%;
+    height: 65%;
+    border-radius: 30px;
+}
+
+.presentation-part {
+    width: 80%;
+}
+
+.text-with-image {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-without-image {
+    width: 50%;
+}
+
+.only-text-presentation {
+    color: black;
+    font-size: 1.25rem;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+.li-presentation {
+    color: #A0A823;
+}
+
+em {
+    font-weight: 400;
+    font-style: normal;
+    color: #A0A823;
+}
+
+.presentation-paragraph-image {
+    width: 45%;
+    height: 350px;
+    background-image: url("../img/photo-presentation-residents.png");
+    background-size: cover;
+    background-position: 50%;
+    border-radius: 30px;
+}
+
+.localisation-part {
+    width: 80%;
+}
+
+.localisation-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.only-text-localisation {
+    color: black;
+    font-size: 1.25rem;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    text-align: justify;
+    width: 50%;
+}
+
+#map {
+    width: 500px;
+    height: 350px;
+}
+
+.history-part {
+    width: 80%;
+}
+
+.chambre-part {
+    width: 80%;
+}
+
+.visite-part {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.visite-part-title {
+    color: #A0A823;
+    font-size: 64px;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 53px 0px;
+    text-align: left;
+    width: 100%;
+}
+
+
+.visite-part img {
+    width: 70%;
+    height: 50%;
 }
