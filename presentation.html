@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/presentation.css">
     <link rel="stylesheet" href="/css/navBar.css">
     <link rel="stylesheet" href="/css/accueil.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <title>Présentation - EHPAD Le Lac</title>
 </head>
 
 <body>
@@ -17,10 +18,11 @@
         <div class="content">
             <div class="links-container">
                 <div class="accueil">
-                    <div class="links"><a class="accueil-link" href="accueil.html">Accueil</a></div>
+                    <div class="links"><a id="accueil-link">Accueil</a></div>
                 </div>
                 <div class="presentation">
-                    <div class="links"><a id="presentation-link" style="color: white; cursor: pointer;">Présentation</a></div>
+                    <div class="links"><a id="presentation-link" style="color: white; cursor: pointer;">Présentation</a>
+                    </div>
                 </div>
                 <div class="services">
                     <div class="links"><a id="services-link" href="#">Services</a></div>
@@ -40,6 +42,28 @@
                 <a href="presentation.html#histoire">Histoire</a>
                 <a href="presentation.html#chambres">Chambres</a>
                 <a style="margin-bottom: 10px;" href="presentation.html#visite">Visite virtuelle</a>
+            </div>
+        </div>
+
+        <div class="sous-menu-container">
+            <div id="sous-menu-accueil">
+                <a style="margin-top: 10px;" href="accueil.html">Accueil</a>
+                <a href="accueil.html#galerie-photo">Galerie photo</a>
+            </div>
+        </div>
+
+        <div class="sous-menu-container">
+            <div id="sous-menu-administration">
+                <a style="margin-top: 10px;" href="administration.html#organigramme">L'organigramme</a>
+                <a href="administration.html#inscription">Inscription</a>
+                <a href="administration.html#instance">Les instances</a>
+            </div>
+        </div>
+
+        <div class="sous-menu-container">
+            <div id="sous-menu-services">
+                <a style="margin-top: 10px;" href="services.html#paramedical">Le service paramédical</a>
+                <a href="services.html#general">Les services généraux</a>
             </div>
         </div>
     </header>
@@ -312,6 +336,18 @@
         <h2 class="visite-part-title">Visite virtuelle</h2>
         <img src="img/imgVisiteVirt.png" alt="">
     </div>
+
+    <footer>
+        <img class="img-footer" src="img/Le Lac.jpg" alt="Le Lac logo">
+        <img class="img-footer" src="img/Béthanie.jpg" alt="Béthanie logo">
+        <div>
+            <a class="a-footer" target="_blank" href="https://www.ch-saintemaure.fr/upad">Upad</a>
+            <a class="a-footer" target="_blank"
+                href="https://www.facebook.com/profile.php?id=100063719234003">Facebook</a>
+        </div>
+        <p class="p-footer">14 Av. Camille Jouffrault, 79150 Argentonnay</p>
+        <p class="p-footer">05.49.65.70.29/ 05.49.65.98.17</p>
+    </footer>
 
     <script src="js/script.js"></script>
     <script src="js/navBar.js"></script>

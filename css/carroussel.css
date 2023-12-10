@@ -1,100 +1,109 @@
-.carrousel-body {
-	font-family: sans-serif;
-	overflow: hidden;
+.carousel-container {
+    position: relative;
+    width: 100vw;
+    height: 76vh;
+    overflow: hidden;
 }
 
-
-.label {
-	background: #444;
-	transition: transform 400ms ease-out;
-	display: inline-block;
-    min-height: 100%;
-	width: 100vw;
-	height: 500px;
-	position: relative;
-	z-index: 1;
-	text-align: center;
-}
-.carroussel-div{
-	position:relative;
-	width: 500px;
-	color: red;
-}
-.carrousel-form {
-    width: 500px;
-    height: 500px;
-	white-space: nowrap;
-}
-.carroussel-input {
-	position: absolute;
+.carousel {
+    width: 300vw;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-.carroussel-input:nth-of-type(1):checked ~ label:nth-of-type(1), 
-.carroussel-input:nth-of-type(2):checked ~ label:nth-of-type(2),
-.carroussel-input:nth-of-type(3):checked ~ label:nth-of-type(3),
-.carroussel-input:nth-of-type(4):checked ~ label:nth-of-type(4),
-.carroussel-input:nth-of-type(5):checked ~ label:nth-of-type(5){
-   z-index: 0;
+.carousel .slide {
+    width: 100%;
+    height: 76vh;
+    object-fit: cover;
 }
 
-.carroussel-input:nth-of-type(1):checked ~ label {
-	transform: translate3d(0, 0, 0);
+.carousel-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    margin: 20px;
+    transform: translateY(-50%);
+    background: #00000042;
+    border-radius: 30px;
+    border: none;
+    color: #ffffff80;
+    cursor: pointer;
 }
 
-.carroussel-input:nth-of-type(2):checked ~ label {
-	transform: translate3d(-100%, 0, 0);
+#prevBtn {
+    left: 10px;
 }
 
-.carroussel-input:nth-of-type(3):checked ~ label {
-	transform: translate3d(-200%, 0, 0);
+#nextBtn {
+    right: 10px;
 }
 
-.carroussel-input:nth-of-type(4):checked ~ label {
-	transform: translate3d(-300%, 0, 0);
-}
-.carroussel-input:nth-of-type(5):checked ~ label {
-	transform: translate3d(-400%, 0, 0);
-}
-
-
-.label {
-	background-image:url("img/new\ batiment.jpg") ;
+.slide1 {
+    background-image: url("../img/Maison-de-retraite.jpg");
     background-position: 50%;
     background-size: cover;
-    background-repeat: no-repeat;
-	font-size: 3rem;
 }
 
-.label[for="slide2"],
-.label[for="slide4"] {
-	background: #cc0000;
+.slide2 {
+    background-image: url("../img/Ad-Hoc-Argentonnay-Ext.webp");
+    background-position: 50%;
+    background-size: cover;
 }
 
-.label:before,
-.label:after {
-	color: white;
-	display: block;
-	background: rgba(255,255,255,0.2);
-	position: absolute;
-	padding: 1rem;
-	font-size: 3rem;
-	height: 10rem;
-	line-height: 10rem;
-	top: 50%;
-	transform: translate3d(0, -50% ,0);
-	cursor: pointer;
+.slide3 {
+    background-image: url("../img/Rab-haut-01.jpg");
+    background-position: 50%;
+    background-size: cover;
 }
 
-.label:before {
-	content: "\276D";
-	right: 100%;
-	border-top-left-radius: 50%;
-	border-bottom-left-radius: 50%;
+.background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.459);
+    filter: blur(0.5rem);
 }
 
-.label:after {
-	content: "\276C";
-	left: 100%;
-	border-top-right-radius: 50%;
-	border-bottom-right-radius: 50%;
+.slide-content {
+    width: 100vw;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+}
+
+.title-slide {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.title-slide h2 {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: end;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.text-slide {
+    width: 45vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text-slide p {
+    margin: 0;
+    text-transform: uppercase;
+    text-align: start;
+    font-family: 'Inter', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    font-size: 1.5rem;
 }

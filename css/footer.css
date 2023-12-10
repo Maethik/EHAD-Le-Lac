@@ -5,15 +5,16 @@ footer {
     background-color: #89AF35;
     width: 100vw;
     height: 100px;
+    margin-top: 10vh;
 }
 
-img {
+.img-footer {
     max-width: 50%;
     margin-left: 10px;
     height: 70%;
     bottom: 10px;
 }
-a {
+.a-footer {
     display: flex;
     text-decoration: none;
     flex-direction: row;
@@ -23,11 +24,11 @@ a {
     width: 100px;
 }
 
-a:hover {
+.a-footer:hover {
     text-decoration: underline;
 }
 
-p{
+.p-footer{
     color: #FFF6E1;
     margin-right: 10px; 
 }

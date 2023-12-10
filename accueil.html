@@ -7,7 +7,22 @@
     <link rel="stylesheet" href="/css/accueil.css">
     <link rel="stylesheet" href="/css/navBar.css">
     <link rel="stylesheet" href="css/carroussel.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
     <title>Accueil - EHPAD Le Lac</title>
+
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 600,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
 </head>
 
 <body>
@@ -17,10 +32,10 @@
         <div class="content">
             <div class="links-container">
                 <div class="accueil">
-                    <div class="links"><a class="accueil-link" style="color: white;" href="accueil.html">Accueil</a></div>
+                    <div class="links"><a id="accueil-link" style="color: white;">Accueil</a></div>
                 </div>
                 <div class="presentation">
-                    <div class="links"><a id="presentation-link" style="color: white; cursor: pointer;">Présentation</a></div>
+                    <div class="links"><a id="presentation-link" style="cursor: pointer;">Présentation</a></div>
                 </div>
                 <div class="services">
                     <div class="links"><a id="services-link" href="#">Services</a></div>
@@ -38,31 +53,85 @@
                 <a style="margin-top: 10px;" href="presentation.html">L'EHPAD</a>
                 <a href="presentation.html#localisation">Localisation</a>
                 <a href="presentation.html#histoire">Histoire</a>
-                <a style="margin-bottom: 10px;" href="presentation.html#chambres">Chambres</a>
+                <a href="presentation.html#chambres">Chambres</a>
+                <a style="margin-bottom: 10px;" href="presentation.html#visite">Visite virtuelle</a>
+            </div>
+        </div>
+
+        <div class="sous-menu-container">
+            <div id="sous-menu-accueil">
+                <a style="margin-top: 10px;" href="accueil.html">Accueil</a>
+                <a href="accueil.html#galerie-photo">Galerie photo</a>
+            </div>
+        </div>
+
+        <div class="sous-menu-container">
+            <div id="sous-menu-administration">
+                <a style="margin-top: 10px;" href="administration.html#organigramme">L'organigramme</a>
+                <a href="administration.html#inscription">Inscription</a>
+                <a href="administration.html#instance">Les instances</a>
+            </div>
+        </div>
+
+        <div class="sous-menu-container">
+            <div id="sous-menu-services">
+                <a style="margin-top: 10px;" href="services.html#paramedical">Le service paramédical</a>
+                <a href="services.html#general">Les services généraux</a>
             </div>
         </div>
     </header>
 
-    <form class="carrousel-form">
-        <input class="carroussel-input" type="radio" name="fancy" autofocus value="slide1" id="slide1">
-
-        <input class="carroussel-input" type="radio" name="fancy" value="slide2" id="slide2">
-
-        <input class="carroussel-input" type="radio" name="fancy" value="slide3" id="slide3">
-
-        <input class="carroussel-input" type="radio" name="fancy" value="slide4" id="slide4">
-        
-        <input class="carroussel-input" type="radio" name="fancy" value="slide5" id="slide5">
-
-        <label class="label" for="slide1">
-            <div class="carroussel-div">Une maison de retraite implantée dans un cadre chaleureux et verdoyant, 
-            qui propose des formules d’accueil et d'hébergement adaptées aux personnes âgées dans 
-            le respect de l’individu et de son bien-être.</div></label>
-        <label class="label" for="slide2">&#9827;</label>
-        <label class="label" for="slide3">&#9829;</label>
-        <label class="label" for="slide4">&#9824;</label>
-        <label class="label" for="slide5">&#9830;</label>
-    </form>
+    <div class="carousel-container">
+        <div id="carousel" class="carousel">
+            <div class="slide slide1">
+                <div class="background"></div>
+                <div class="slide-content">
+                    <div class="title-slide">
+                        <h2>nos équipes vous<br>souhaites la<br>bienvenue</h2>
+                    </div>
+                    <div class="text-slide">
+                        <p>Une maison de retraite implantée<br>dans un cadre chaleureux et<br>verdoyant, qui propose
+                            des<br>formules d’accueil et d'hébergement<br>adaptées aux personnes âgées<br>dans le
+                            respect de l’individu et de<br>son bien-être.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide2">
+                <div class="background"></div>
+                <div class="slide-content">
+                    <div class="title-slide">
+                        <h2>un nouveau<br>batiment</h2>
+                    </div>
+                    <div class="text-slide">
+                        <p>Nous avons le plaisir de vous<br>informer qu’à partir du LUNDI 9 OCTOBRE,<br>l’entrée à
+                            l’EHPAD se fera par<br>le nouvel accueil (situé route d’Hautibus).<br>
+                            La grille blanche qui vous donnait<br>accès à l’établissement par le parc<br>sera donc
+                            fermée.
+                            Vous en souhaitant<br>bonne réception</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide slide3"><div class="background"></div>
+            <div class="slide-content">
+                <div class="title-slide">
+                    <h2>slide 3</h2>
+                </div>
+                <div class="text-slide">
+                    <p>Lorem ipsum dolor sit amet consectetur<br>adipisicing elit. Ipsa blanditiis asperiores,<br>tenetur omnis cum, repellat iure odit fugit rem<br>perferendis numquam! Quia suscipit<br>quaerat ad ducimus nesciunt<br>voluptas et dolor?</p>
+                </div>
+            </div></div>
+        </div>
+        <button id="prevBtn" class="carousel-button">
+            <span class="material-symbols-outlined">
+                arrow_back_ios
+            </span>
+        </button>
+        <button id="nextBtn" class="carousel-button">
+            <span class="material-symbols-outlined">
+                arrow_forward_ios
+            </span>
+        </button>
+    </div>
 
     <div class="mot-accueil">
         <h2 class="main-part-title">Accueil</h2>
@@ -83,33 +152,79 @@
         <div class="content-actu">
             <h3 class="paragraph-title">Information du 6 octobre 2023</h3>
             <p class="paragraph">Bonjour,<br><br>
-            Nous avons le plaisir de vous informer qu’à partir du LUNDI 9 OCTOBRE , l’entrée à l’EHPAD se fera par le
-            nouvel accueil ( situé route d’Hautibus ).<br><br>
-            La grille blanche qui vous donnait accès à l’établissement par le parc sera donc fermée.<br><br>
-            Vous en souhaitant bonne réception,<br><br>
-            Cordialement,<br>
-            Jean Luc VICTOR<br>
-            Directeur<br><br>
-            EHPAD « Le Lac » - 05.49.65.70.29</p>
+                Nous avons le plaisir de vous informer qu’à partir du LUNDI 9 OCTOBRE , l’entrée à l’EHPAD se fera par
+                le
+                nouvel accueil ( situé route d’Hautibus ).<br><br>
+                La grille blanche qui vous donnait accès à l’établissement par le parc sera donc fermée.<br><br>
+                Vous en souhaitant bonne réception,<br><br>
+                Cordialement,<br>
+                Jean Luc VICTOR<br>
+                Directeur<br><br>
+                EHPAD « Le Lac » - 05.49.65.70.29</p>
         </div>
-        
+
         <div class="img-separation"></div>
 
         <div class="content-actu">
             <h3 class="paragraph-title">Information du 6 octobre 2023</h3>
             <p class="paragraph">Bonjour,<br><br>
-            Nous avons le plaisir de vous informer qu’à partir du LUNDI 9 OCTOBRE , l’entrée à l’EHPAD se fera par le
-            nouvel accueil ( situé route d’Hautibus ).<br><br>
-            La grille blanche qui vous donnait accès à l’établissement par le parc sera donc fermée.<br><br>
-            Vous en souhaitant bonne réception,<br><br>
-            Cordialement,<br>
-            Jean Luc VICTOR<br>
-            Directeur<br><br>
-            EHPAD « Le Lac » - 05.49.65.70.29</p>
+                Nous avons le plaisir de vous informer qu’à partir du LUNDI 9 OCTOBRE , l’entrée à l’EHPAD se fera par
+                le
+                nouvel accueil ( situé route d’Hautibus ).<br><br>
+                La grille blanche qui vous donnait accès à l’établissement par le parc sera donc fermée.<br><br>
+                Vous en souhaitant bonne réception,<br><br>
+                Cordialement,<br>
+                Jean Luc VICTOR<br>
+                Directeur<br><br>
+                EHPAD « Le Lac » - 05.49.65.70.29</p>
+        </div>
+    </div>
+    <span class="separation-part"></span>
+    <div id="galerie-photo" class="photo">
+        <h2 class="main-part-title">Galerie photo</h2>
+
+        <div class="month-container">
+            <p class="month-title">Février 2024</p>
+            <div class="photo-line-separation"></div>
+            <div class="photo-container">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+            </div>
+        </div>
+
+        <div class="month-container">
+            <p class="month-title">Janvier 2024</p>
+            <div class="photo-line-separation"></div>
+            <div class="photo-container">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+                <img src="img/Buanes-01.jpg" alt="image de l'EHPAD">
+            </div>
         </div>
     </div>
 
+    <footer>
+        <img class="img-footer" src="img/Le Lac.jpg" alt="Le Lac logo">
+        <img class="img-footer" src="img/Béthanie.jpg" alt="Béthanie logo">
+        <div>
+            <a class="a-footer" target="_blank" href="https://www.ch-saintemaure.fr/upad">Upad</a>
+            <a class="a-footer" target="_blank"
+                href="https://www.facebook.com/profile.php?id=100063719234003">Facebook</a>
+        </div>
+        <p class="p-footer">14 Av. Camille Jouffrault, 79150 Argentonnay</p>
+        <p class="p-footer">05.49.65.70.29/ 05.49.65.98.17</p>
+    </footer>
+
     <script src="js/navBar.js"></script>
+    <script src="js/carroussel.js"></script>
 </body>
 
 </html>
