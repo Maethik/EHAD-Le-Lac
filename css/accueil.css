@@ -46,7 +46,7 @@ body {
 }
 
 .img-separation {
-    background-image: url("/img/Maison-de-retraite.jpg");
+    background-image: url("img/Maison-de-retraite.jpg");
     background-size: cover;
     width: 100vw;
     height: 114px;

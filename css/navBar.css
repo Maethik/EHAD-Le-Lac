@@ -22,7 +22,7 @@ body {
     height: 24vh;
     position: absolute;
     z-index: auto;
-    background-image: url("/img/Ad-Hoc-Argentonnay-Ext.webp");
+    background-image: url("img/Ad-Hoc-Argentonnay-Ext.webp");
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: cover;
